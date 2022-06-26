@@ -1,15 +1,15 @@
 body{
-    margin:0;
+    margin:0 auto;
     padding:0;
-    width:100vw;
-    height:100vh;
+    width:98vw;
+    height:100%;
     background: linear-gradient(145deg, rgb(251, 171, 22), rgb(187, 23, 242)) repeat center;
 }
 .calculator{
-    margin:0;
+    margin:0 auto;
     padding:0;
-    width:100vw;
-    height:100vh;
+    width:97vw;
+    height:99vh;
     display:flex;
     flex-flow:column nowrap;
 }
@@ -156,6 +156,8 @@ i{
     padding-left:8px;
     background:blueviolet;
     color:tomato;
+    border-radius:8px;
+    margin-top:4px;
 }
 /*Input Spends*/
 .inpSpends{
@@ -197,8 +199,7 @@ h3{
 
 /*Button Calculate*/
 .content:nth-child(3){
-    position:relative;
-    bottom:0;
+    margin:0 auto;
     border:none;
     width:100%;
     background:linear-gradient(170deg, rgb(251, 0, 0), rgb(212, 12, 162));
