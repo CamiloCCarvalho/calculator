@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b3cdcff831.js" crossorigin="anonymous"></script>
+    <title>Calculadora de Caixa</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/calccaixa.css">
+</head>
+<body>
+    <section class="calculator">
+        <!--header-->
+        <header class="content">
+            <a href="#">
+                <img src="/src/c.png" alt="Logo Cotral">
+            </a>
+            <label class="title" for="header">
+                Calculadora
+            </label>
+        </header>
+
+        <!--Content Calculate-->
+        <div class="content">
+            <div class="travels">
+                <label for="go" class="stitle">
+                    Centro
+                </label>
+                <label for="comeBack" class="stitle">
+                    Bairro
+                </label>
+                <label for="Counts" class="stitle">
+                    Total
+                </label>
+                <div class="travel">
+                    <button onclick="clicked()"id="btnMinus"class="btns">
+                        -
+                    </button>
+                    <button id="btnPlus" class="btns">
+                        +
+                    </button>
+                    <input placeholder="00" class="inpNumb"type="number" name="count" id="g1">
+                </div>
+                <div class="travel">
+                    <button id="btnMinus2"class="btns">
+                        -
+                    </button>
+                    <button id="btnPlus2" class="btns">
+                        +
+                    </button>
+                    <input placeholder="00" class="inpNumb"type="number" name="count" id="b1">
+                </div>
+                <div class="travel">
+                    <label id="totPart1"for="partial" class="partial">
+                        00
+                    </label>
+                </div>
+                    <div class="travel">
+                        <button id="btnMinus3"class="btns">
+                            -
+                        </button>
+                        <button id="btnPlus3" class="btns">
+                            +
+                        </button>
+                        <input placeholder="00"class="inpNumb"type="number" name="count" id="g2">
+                    </div>
+                    <div class="travel">
+                        <button id="btnMinus4"class="btns">
+                            -
+                        </button>
+                        <button id="btnPlus4" class="btns">
+                            +
+                        </button>
+                        <input placeholder="00"class="inpNumb"type="number" name="count" id="b2">
+                    </div>
+                <div class="travel">
+                    <label id="totPart2"for="partial" class="partial">
+                        00
+                    </label>
+                </div>
+                    <div class="travel">
+                        <button id="btnMinus5"class="btns">
+                            -
+                        </button>
+                        <button id="btnPlus5" class="btns">
+                            +
+                        </button>
+                        <input placeholder="00"class="inpNumb"type="number" name="count" id="g3">
+                    </div>
+                    <div class="travel">
+                        <button id="btnMinus6"class="btns">
+                            -
+                        </button>
+                        <button id="btnPlus6" class="btns">
+                            +
+                        </button>
+                        <input placeholder="00"class="inpNumb"type="number" name="count" id="b3">
+                    </div>
+                <div class="travel">
+                    <label id="totPart3"for="partial" class="partial">
+                        00
+                    </label>
+                </div>
+                    <div class="travel">
+                        <button id="btnMinus7"class="btns">
+                            -
+                        </button>
+                        <button id="btnPlus7" class="btns">
+                            +
+                        </button>
+                        <input placeholder="00"class="inpNumb"type="number" name="count" id="g4">
+                    </div>
+                    <div class="travel">
+                        <button id="btnMinus8"class="btns">
+                            -
+                        </button>
+                        <button id="btnPlus8" class="btns">
+                            +
+                        </button>
+                        <input placeholder="00"class="inpNumb"type="number" name="count" id="b4">
+                    </div>
+                <div class="travel">
+                    <label id="totPart4"for="partial" class="partial">
+                        00
+                    </label>
+                </div>
+                    <div class="travel">
+                        <button id="btnMinus9"class="btns">
+                            -
+                        </button>
+                        <button id="btnPlus9" class="btns">
+                            +
+                        </button>
+                        <input placeholder="00"class="inpNumb"type="number" name="count" id="g5">
+                    </div>
+                    <div class="travel">
+                        <button id="btnMinus10"class="btns">
+                            -
+                        </button>
+                        <button id="btnPlus10" class="btns">
+                            +
+                        </button>
+                        <input placeholder="00"class="inpNumb"type="number" name="count" id="b5">
+                    </div>
+                <div class="travel">
+                    <label id="totPart5"class="partial"for="partial" class="partial">
+                        00
+                    </label>
+                </div>
+            </div>
+            <!--Others Contents Calculate-->
+            <div class="screenSolve">
+                <div class="solved">
+                    <!--Cards CD-->
+                    <div class="spends">
+                        <i class="fa-brands fa-cc-mastercard">
+                            <input placeholder="Déb./Cr. (N°)"class="inpSpends"type="number" name="numberCardC" id="cardNumbers">
+                        </i>
+                    </div>
+                    <!--Pix-->
+                    <div class="spends">
+                        <i class="fa-brands fa-pix">
+                            <input placeholder="Pix (N°)"class="inpSpends" type="number" name="numberPixs" id="pixNumbers">
+                        </i>
+                    </div>
+                    <!--Meia-->
+                    <div class="spends">
+                        <i class="fa-solid fa-graduation-cap">
+                            <input placeholder="Meia (N°)"class="inpSpends" type="number" name="numberCardC" id="cardcd">
+                        </i>
+                    </div>
+                    <!--Motorista-->
+                    <div class="spends">
+                        <i class="fa-solid fa-person-military-pointing">
+                            <input placeholder="Motorista (R$)"class="inpSpends" type="number" name="numberCardC" id="cardcd">
+                        </i>
+                    </div>
+                    <!--Cobrador-->
+                    <div class="spends">
+                        <i class="fa-solid fa-user-pen">
+                            <input placeholder="Cobrador (R$)"class="inpSpends" type="number" name="numberCardC" id="cardcd">
+                        </i>
+                    </div>
+                    <!--Diesel-->
+                    <div class="spends">
+                        <i class="fa-solid fa-gas-pump">
+                            <input placeholder="Deisel (R$)"class="inpSpends" type="number" name="numberCardC" id="cardcd">
+                        </i>
+                    </div>
+                    <!--Despesas-->
+                    <div class="spends">
+                        <i class="fa-solid fa-dollar-sign">
+                            <input placeholder="Gastos (R$)"class="inpSpends" type="number" name="numberCardC" id="cardcd">
+                        </i>
+                    </div>
+                </div>
+                <div class="solved">
+                    <section class="results">
+                        <h3>Resultado</h3>
+                        <div class="areasRes">
+                            <label for="pass">Passageiros:</label>
+                            <span>45,00</span>
+                        </div>
+                        <div class="areasRes">
+                            <label for="cards">Em Cartão:</label>
+                            <span>45,00</span>
+                        </div>
+                        <div class="areasRes">
+                            <label for="pix">Em Pix:</label>
+                            <span>45,00</span>
+                        </div>
+                        <div class="areasRes">
+                            <label for="driver">Motorista:</label>
+                            <span>45,00</span>
+                        </div>
+                        <div class="areasRes">
+                            <label for="collector">Cobrador:</label>
+                            <span>45,00</span>
+                        </div>
+                        <div class="areasRes">
+                            <label for="fuel">Diesel:</label>
+                            <span>45,00</span>
+                        </div>
+                        <div class="areasRes">
+                            <label for="spends">Gastos:</label>
+                            <span>45,00</span>
+                        </div>
+                        <div class="areasRes">
+                            <label for="totFull">Bruto:</label>
+                            <span>45,00</span>
+                        </div>
+                        <div class="areasRes">
+                            <label for="account">Em Conta:</label>
+                            <span>45,00</span>
+                        </div>
+                        <div class="areasRes">
+                            <label for="liquid">Liquido:</label>
+                            <span>45,00</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <!--Calculate Button-->
+        <button class="content">
+            Calcular
+        </button>
+    </section>
+    <script>
+        function clicou(){
+            console.log('clicou')
+        }
+    </script>
+</body>
+</html>
