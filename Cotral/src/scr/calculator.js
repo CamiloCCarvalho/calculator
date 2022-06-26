@@ -111,7 +111,7 @@ function calctot(){
     let accountMoney = ((cards+pix)*price).toFixed(2)
     let liquidMoney = (totMoney-accountMoney-driver-collect-fuel-spend).toFixed(2)
 
-    console.log(liquidMoney)
+    
 
 }
 
