@@ -110,7 +110,7 @@ body{
     font-size:12pt;
 }
 .inpNumb::placeholder{
-    color:rgb(224, 225, 226);
+    color:rgb(200, 200, 200);
 }
 .partial{
     font-size:12pt;
@@ -167,9 +167,10 @@ i{
     margin-left:30px;
     text-align:center;
     margin-bottom:6px;
+    color:aliceblue;
 }
 .inpSpends::placeholder{
-    color:rgb(230, 231, 232);
+    color:rgb(209, 210, 210);
 }
 /*Screen Solve Right*/
 .results{

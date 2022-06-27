@@ -1,12 +1,21 @@
-var go1 = Number(document.getElementById('g1').value)
-var back1 = Number(document.getElementById('b1').value)
+//price pass in SJC 2022 reference
+const price = 4.50
+const inps = document.querySelectorAll('.inpNumb')
+inps.forEach(element => {
+    element.disabled = true
+    
+})
 
 // Function to More one Traveler in Count
 function clickMinus(clickedId){
     let travelers = document.querySelectorAll('.inpNumb')
     const btnsMinus = [1,3,5,7,9,11,13,15,17,19]
     for(let i=0; i<btnsMinus.length; i++){
-        if(clickedId == btnsMinus[i]){
+        if(travelers[i].value < 0){
+            travelers[i].value = 0
+        }else if(travelers[i].value > 400){
+            travelers[i] = 400
+        }else if(clickedId == btnsMinus[i]){
             travelers[i].value--
         }
         switch(Number(clickedId)){
@@ -51,10 +60,14 @@ function clickPlus(clickedId){
     let travelers = document.querySelectorAll('.inpNumb')
     const btnsPlus = [2,4,6,8,10,12,14,16,18,20]
     for(let i=0; i<btnsPlus.length; i++){
-        if(clickedId == btnsPlus[i]){
+        if(travelers[i].value < 0){
+            travelers[i].value = 0
+        }else if(travelers[i].value > 400){
+            travelers[i] = 400
+        }else if(clickedId == btnsPlus[i]){
             travelers[i].value++
         }
-        switch(Number(clickedId)){
+            switch(Number(clickedId)){
             case 2:
                 document.getElementById('totPart1').innerText = Number(document.getElementById('g1').value) + Number(document.getElementById('b1').value)
                 break
@@ -85,7 +98,7 @@ function clickPlus(clickedId){
             case 20:
                 document.getElementById('totPart5').innerText = Number(document.getElementById('g5').value) + Number(document.getElementById('b5').value)
                 break
-        } 
+            }
     }
     console.log(`Button Plus in ID: ${clickedId} was clicked`)
 }
@@ -104,14 +117,23 @@ function calctot(){
     const collect = Number(document.getElementById('collect').value)
     const fuel = Number(document.getElementById('fuel').value)
     const spend = Number(document.getElementById('spend').value)
-    let price = 4.50
+    
 
     let realPass = (totPass-(mid/2)).toFixed(2)
     let totMoney = (realPass*price).toFixed(2)
     let accountMoney = ((cards+pix)*price).toFixed(2)
     let liquidMoney = (totMoney-accountMoney-driver-collect-fuel-spend).toFixed(2)
 
-    
+    document.getElementById('respass').innerText = totPass
+    document.getElementById('rescard').innerText = Number(cards*price).toFixed(2)
+    document.getElementById('respix').innerText = Number(pix*price).toFixed(2)
+    document.getElementById('resmot').innerText = Number(driver).toFixed(2)
+    document.getElementById('resco').innerText = Number(collect).toFixed(2)
+    document.getElementById('resfuel').innerText = Number(fuel).toFixed(2)
+    document.getElementById('resspend').innerText = Number(spend).toFixed(2)
+    document.getElementById('resfull').innerText = Number(totPass*price).toFixed(2)
+    document.getElementById('resacc').innerText = Number((cards*price)+(pix*price)).toFixed(2)
+    document.getElementById('resliq').innerText = Number(liquidMoney).toFixed(2)
 
 }
 
