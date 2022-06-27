@@ -11,7 +11,7 @@ function clickMinus(clickedId){
     let travelers = document.querySelectorAll('.inpNumb')
     const btnsMinus = [1,3,5,7,9,11,13,15,17,19]
     for(let i=0; i<btnsMinus.length; i++){
-        if(travelers[i].value < 0){
+        if(travelers[i].value <= 0){
             travelers[i].value = 0
         }else if(travelers[i].value > 400){
             travelers[i] = 400
