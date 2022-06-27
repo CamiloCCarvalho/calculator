@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b3cdcff831.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="cotral/css/style.css">
     <title>COTRAL</title>
 </head>
 <body>
     <section class="root">
             <div>
-                <img class="logo" src="src/logo.png" alt="Logo Ilustrativa da COTRAL">
+                <img class="logo" src="/cotral/src/logo.png" alt="Logo Ilustrativa da COTRAL">
             </div>
             <form action="menu/calcular-caixa.html" class="form">
                 <i class="fa-solid fa-envelope">
@@ -24,16 +24,11 @@
                     <input type="password" name="pass" id=passput placeholder="Digite uma senha" />
                 </i>
                 <button id="btnLogin" class="button">
-                    Login
+                    <a href="./cotral/menu/calcular-caixa.html">Login</a>
                 </button>
                 <a id="newUpass" href="#">Esqueci minha senha</a>
             </form>
             <a id="newUser" href="#">Quero criar uma conta</a>
     </section>
-    <script>
-        function enterLog(){
-            window.location.href = "menu/calcular-caixa.html"
-        }
-    </script>
 </body>
 </html>
