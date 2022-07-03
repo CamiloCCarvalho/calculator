@@ -126,9 +126,7 @@ function calctot(){
 
     document.getElementById('respass').innerText = realPass
 
-    document.getElementById('rescard').innerText = Number(cards*price).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-
-    document.getElementById('respix').innerText = Number(pix*price).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+    document.getElementById('resest').innerText = Number(mid).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 
     document.getElementById('resmot').innerText = Number(driver).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 
