@@ -44,7 +44,7 @@ body{
 }
 /*Area Travel Large Box*/
 .travels{
-    height:260px;
+    height:60%;
     width:100%;
     display:flex;
     flex-flow:row wrap;
