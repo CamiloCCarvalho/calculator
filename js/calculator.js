@@ -124,7 +124,7 @@ function calctot(){
     let accountMoney = ((cards+pix)*price).toFixed(2)
     let liquidMoney = (totMoney-accountMoney-driver-collect-fuel-spend).toFixed(2)
 
-    document.getElementById('respass').innerText = totPass
+    document.getElementById('respass').innerText = realPass
 
     document.getElementById('rescard').innerText = Number(cards*price).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 
