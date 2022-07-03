@@ -202,7 +202,7 @@ i{
 .results div span:nth-child(2){
     color:rgb(255, 0, 0);
 }
-#respass,#rescard,#respix,#resacc,#resliq{
+#respass,#rescard,#resest,#resacc,#resliq{
     color:green;
 }
 #resfull{
