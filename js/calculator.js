@@ -125,15 +125,24 @@ function calctot(){
     let liquidMoney = (totMoney-accountMoney-driver-collect-fuel-spend).toFixed(2)
 
     document.getElementById('respass').innerText = totPass
-    document.getElementById('rescard').innerText = Number(cards*price).toFixed(2)
-    document.getElementById('respix').innerText = Number(pix*price).toFixed(2)
-    document.getElementById('resmot').innerText = Number(driver).toFixed(2)
-    document.getElementById('resco').innerText = Number(collect).toFixed(2)
-    document.getElementById('resfuel').innerText = Number(fuel).toFixed(2)
-    document.getElementById('resspend').innerText = Number(spend).toFixed(2)
-    document.getElementById('resfull').innerText = Number(totPass*price).toFixed(2)
-    document.getElementById('resacc').innerText = Number((cards*price)+(pix*price)).toFixed(2)
-    document.getElementById('resliq').innerText = Number(liquidMoney).toFixed(2)
+
+    document.getElementById('rescard').innerText = Number(cards*price).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+
+    document.getElementById('respix').innerText = Number(pix*price).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+
+    document.getElementById('resmot').innerText = Number(driver).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+
+    document.getElementById('resco').innerText = Number(collect).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+
+    document.getElementById('resfuel').innerText = Number(fuel).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+
+    document.getElementById('resspend').innerText = Number(spend).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+
+    document.getElementById('resfull').innerText = Number(totPass*price).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+
+    document.getElementById('resacc').innerText = Number((cards*price)+(pix*price)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+
+    document.getElementById('resliq').innerText = Number(liquidMoney).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 
 }
 
