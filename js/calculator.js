@@ -126,7 +126,7 @@ function calctot(){
 
     document.getElementById('respass').innerText = totPass
 
-    document.getElementById('resest').innerText = Number(mid).toFixed(2)
+    document.getElementById('resest').innerText = Number(mid).toFixed(0)
 
     document.getElementById('resmot').innerText = Number(driver).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 
