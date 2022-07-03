@@ -138,7 +138,7 @@ function calctot(){
 
     document.getElementById('resspend').innerText = Number(spend).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 
-    document.getElementById('resfull').innerText = Number(totPass*price).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+    document.getElementById('resfull').innerText = Number(realPass*price).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 
     document.getElementById('resacc').innerText = Number((cards*price)+(pix*price)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 
