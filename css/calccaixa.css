@@ -1,7 +1,7 @@
 body{
     margin:0 auto;
     padding:0;
-    width:98vw;
+    width:99vw;
     height:100%;
     background: linear-gradient(145deg, rgb(251, 171, 22), rgb(187, 23, 242)) repeat center;
 }
@@ -210,7 +210,11 @@ h3{
     color:aliceblue;
     position:fixed;
     bottom:0px;
+    
 }
-.calc{
-    width:100vw;
+#calc{
+    padding:0;
+    margin:0;
+    width:80%;
+    align-self: center;
 }
