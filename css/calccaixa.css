@@ -3,7 +3,7 @@ body{
     padding:0;
     width:99vw;
     height:100%;
-    background: linear-gradient(145deg, rgb(251, 171, 22), rgb(187, 23, 242)) repeat center;
+    background: linear-gradient(145deg, rgb(251, 171, 22), rgb(244, 153, 6)) repeat center;
 }
 .calculator{
     margin:0 auto;
@@ -71,13 +71,14 @@ body{
 }
 /*Travels Areas Small*/
 .travel{
+    height:50px;
     background:blueviolet;
     border-radius:8px;
 }
 /*Buttons Travel Plus Minus*/
 .btns{
     height:98%;
-    width:86px;
+    width:92px;
     color:rgb(255, 254, 255);
     background:blueviolet;
     display:flex;
@@ -138,7 +139,7 @@ body{
     margin-left:8px;
     margin-right:8px;
     min-height:auto;
-    height:39px;
+    height:48px;
     width:90%;
     border-radius:0;
     display:flex;
@@ -153,8 +154,8 @@ body{
 i{
     height:100%;
     width:100%;
-    padding-top:6px;
-    padding-left:8px;
+    padding-top:14px;
+    padding-left:12px;
     background:blueviolet;
     color:tomato;
     border-radius:8px;
@@ -162,12 +163,14 @@ i{
 }
 /*Input Spends*/
 .inpSpends{
-    width:90px;
+    height:20px;
+    width:60%;
     background:none;
     border:none;
     margin-left:30px;
     text-align:center;
-    margin-bottom:6px;
+    font-size:100%;
+    margin-bottom:10px;
     color:aliceblue;
 }
 .inpSpends::placeholder{
@@ -188,15 +191,18 @@ i{
 }
 h3{
     margin:0;
+    margin-left:27%;
     margin-bottom:10px;
 }
 .areasRes{
+    height:23px;
     display:flex;
     justify-content:space-between;
     align-items:center;
     margin-bottom:4px;
     padding-bottom:1px;
     border-bottom: 1px solid blueviolet;
+    font-size:130%;
 }
 
 /*Button Calculate*/
@@ -215,6 +221,7 @@ h3{
 #calc{
     padding:0;
     margin:0;
-    width:80%;
+    width:92%;
+    font-size:140%;
     align-self: center;
 }
