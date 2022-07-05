@@ -92,5 +92,11 @@ i{
         justify-content: center;
         border-radius: 6px;
     }
+    .logo{
+        width:100px;
+    }
+    #btnLogin{
+        margin:5px;
+    }
     
 }
