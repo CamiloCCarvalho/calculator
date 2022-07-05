@@ -98,5 +98,11 @@ i{
     #btnLogin{
         margin:5px;
     }
+    .footer{
+        height:60px;
+    }
+    .footer p{
+        margin-top:6px;
+    }
     
 }
