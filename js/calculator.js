@@ -146,27 +146,21 @@ function calctot(){
 
 //Reset values to Zero
 function clean(){
-    document.getElementById('respass').innerText = 0
-    document.getElementById('resest').innerText = 0
-    document.getElementById('resmot').innerText = 0
-    document.getElementById('resco').innerText = 0
-    document.getElementById('resfuel').innerText = 0
-    document.getElementById('resspend').innerText = 0
-    document.getElementById('resfull').innerText = 0
-    document.getElementById('resacc').innerText = 0
-    document.getElementById('resliq').innerText = 0
-
+    let spans = document.querySelectorAll('.span')
+        spans.forEach(element => {
+        element.innerText = 0
+        })
     let travelers = document.querySelectorAll('.inpNumb')
         travelers.forEach(element => {
-        element.value = 0
+        element.value = null
         })
     let partial = document.querySelectorAll('.partial')
         partial.forEach(element =>{
-        element.innerHTML = 0
+        element.innerHTML = "00"
         })
     let spends = document.querySelectorAll('.inpSpends')
         spends.forEach(element =>{
-            element.value = 0
+            element.value = null
         })
 }
 
