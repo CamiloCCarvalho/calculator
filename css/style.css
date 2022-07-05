@@ -84,3 +84,15 @@ i{
     color:rgb(244, 244, 244);
     font-size:90%;
 }
+@media (max-height: 440px){
+    .form{
+        width:60%;
+        height:40%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+    }
+    
+}
